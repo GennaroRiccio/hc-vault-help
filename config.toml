@@ -1,0 +1,6 @@
+[settings]
+vault_addr = ""
+vault_token = ""
+
+[secrets]
+path = ""

@@ -1,0 +1,18 @@
+{% macro input(type, label, name, value="") %}
+    <label for="{{ name }}">{{ label }}</label>
+    <input type="{{ type }}"
+           name="{{ name }}"
+           id="{{ name }}"
+           value=' {{ value }}'
+    />
+{% endmacro input %}
+
+{% macro select(label, name, options) %}
+    <label for="{{ name }}">{{ label }}</label>
+    <select name="{{ name }}" id="{{ name }}">
+        {% for value in options %}
+            <option value="{{ value }}"
+            >{{ value }}</option>
+        {% endfor %}
+    </select>
+{% endmacro select %}
